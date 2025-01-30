@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Doom example</title>
+    </head>
+    <body>
+        <h1 id="header">This is the original title</h1>
+        <button onclick="changeHeader()">Change header</button>
+        <button onclick="backToOriginal()">Back to original</button>
+        <script>
+            function changeHeader() {
+                const header = document.getElementById("header");
+                header.textContent = "Header changed";
+                header.style.color = "green";
+            }
+            function backToOriginal() {
+                const original = document.getElementById("header");
+                original.textContent = "Change Header";
+                original.style.color = "black";
+            }
+
+        </script>
+    </body>
+
+</html>
